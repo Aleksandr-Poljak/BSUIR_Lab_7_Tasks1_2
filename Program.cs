@@ -22,12 +22,12 @@ duck.Print(); // Склеивание
 
 // TASK 2
 Console.WriteLine("\n" + "TASK 2");
-IFlay[] critter = {bee1, bee2,duck, stork, bee3, hawk}; 
-foreach(var c in critter)
+IFlay[] critter = { bee1, bee2, duck, stork, bee3, hawk };
+foreach (var c in critter)
 {
     // Добавить 5 шагов, всем кто поддерживает интерфейс IWalk и вывести на консоль.
     (c as IWalk)?.AddStep(5);
-    if(c is IWalk)
+    if (c is IWalk)
     {
         c.Print();
     }

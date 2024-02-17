@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BSUIR_Lab_7_Tasks1_2
 {
-    internal class Bee: IFlay
+    public class Bee: IFlay
     {
         static readonly string[] directions = {"N", "E", "S", "W", "NE", "SE", "SW", "NW"};
 
@@ -80,7 +80,7 @@ namespace BSUIR_Lab_7_Tasks1_2
         }
         public override string ToString()
         {
-            return $"Пчела. Имя: {name}. Высота: {Height}м. Скорость: {GetCurrentSpeed}км/ч. Направление {Direction}";
+            return $"Пчела. Имя: {name}. Высота: {Height}м. Скорость: {GetCurrentSpeed()}км/ч. Направление {Direction}";
         }
         public void Print()
         {

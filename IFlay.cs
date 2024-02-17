@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BSUIR_Lab_7_Tasks1_2
 {
-    internal interface IFlay
+    public interface IFlay
     {
         int Height { get; set; }
         int Speed { get; set; }

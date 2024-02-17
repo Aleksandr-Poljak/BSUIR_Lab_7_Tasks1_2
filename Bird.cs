@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BSUIR_Lab_7_Tasks1_2
 {
-    internal class Bird: IWalk, IFlay
+    public class Bird: IWalk, IFlay
     {
         static readonly string[] directions = { "N", "E", "S", "W", "NE", "SE", "SW", "NW" };
         string name = "unknown";
